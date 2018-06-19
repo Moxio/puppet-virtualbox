@@ -46,6 +46,7 @@ class virtualbox::install (
 
         apt::key { $apt_key_thumb:
           ensure => present,
+          id     => $apt_key_thumb,
           source => $apt_key_source,
         }
 
